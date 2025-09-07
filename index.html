@@ -70,25 +70,47 @@
         <!-- Header -->
         <header class="absolute top-0 left-0 right-0 z-10 p-4">
             <div class="container mx-auto flex justify-between items-center">
-                <h1 class="text-2xl font-bold tracking-tighter">kauders<span class="gradient-text">.ai</span></h1>
-                <nav>
+                <a href="#" class="text-2xl font-bold tracking-tighter">kauders<span class="gradient-text">.ai</span></a>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex">
                     <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">What I Do</a>
                     <a href="#process" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Process</a>
                     <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
                     <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
                 </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
             </div>
         </header>
 
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-95 z-20">
+            <div class="flex justify-end p-4 absolute top-0 right-0">
+                <button id="close-menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full -mt-16 space-y-8 text-2xl font-semibold">
+                <a href="#services" class="mobile-link text-gray-300 hover:gradient-text transition">What I Do</a>
+                <a href="#process" class="mobile-link text-gray-300 hover:gradient-text transition">Process</a>
+                <a href="#pricing" class="mobile-link text-gray-300 hover:gradient-text transition">Pricing</a>
+                <a href="#contact" class="mobile-link text-gray-300 hover:gradient-text transition">Contact</a>
+            </div>
+        </div>
+
         <main>
             <!-- Hero Section -->
-            <section class="min-h-screen flex items-center justify-center text-center px-4 relative">
+            <section class="min-h-screen lg:min-h-0 lg:py-48 flex items-center justify-center text-center px-4 relative">
                 <div class="max-w-4xl">
-                    <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 leading-tight">Stop Wasting Time. <br><span class="gradient-text">Automate Your Business.</span></h2>
-                    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                    <h2 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter mb-4 leading-tight">Stop Wasting Time. <br><span class="gradient-text">Automate Your Business.</span></h2>
+                    <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
                         For <span class="text-white font-semibold">Cedarburg</span> businesses: I build custom AI and automation solutions that eliminate tedious tasks, unlock data insights, and free you up to focus on what you do best. Powerful results, reasonably priced.
                     </p>
-                    <a href="#contact" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg">
+                    <a href="#contact" class="btn-primary text-white font-bold py-3 px-6 sm:py-3 sm:px-8 rounded-full text-base sm:text-lg">
                         Start Saving Time
                     </a>
                 </div>
@@ -98,11 +120,11 @@
             <section id="services" class="py-16 md:py-24 px-4">
                 <div class="container mx-auto">
                     <div class="text-center mb-12">
-                        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">What I Actually Do</h2>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">What I Actually Do</h2>
                         <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto">It's not about buzzwords. It's about solving real problems that cost you time and money.</p>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Card 1 -->
                         <div class="card-bg rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300 glow-effect">
                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
@@ -135,10 +157,10 @@
             <section id="process" class="py-16 md:py-24 px-4 bg-black bg-opacity-20">
                 <div class="container mx-auto">
                     <div class="text-center mb-16">
-                        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">A Simple, Clear Process</h2>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">A Simple, Clear Process</h2>
                         <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto">I make it easy to get started and deliver results you can see.</p>
                     </div>
-                    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+                    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <!-- Step 1 -->
                         <div class="card-bg rounded-2xl p-8 border-t-4 border-blue-500 shadow-lg flex flex-col items-center">
                             <div class="mb-5">
@@ -170,27 +192,26 @@
             <!-- Local Section -->
             <section id="local" class="py-16 md:py-24 px-4">
                 <div class="container mx-auto text-center max-w-3xl">
-                    <h2 class="text-4xl font-bold mb-4 tracking-tighter">Your Local <span class="gradient-text">Cedarburg</span> Partner</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4 tracking-tighter">Your Local <span class="gradient-text">Cedarburg</span> Partner</h2>
                     <p class="text-lg text-gray-400">
                         Why hire a faceless firm from across the country? I'm right here in Cedarburg. I understand the local business landscape and can meet you for coffee to discuss your challenges face-to-face. You get dedicated, personal service from a neighbor.
                     </p>
                 </div>
             </section>
             
-              <!-- Pricing Section -->
+            <!-- Pricing Section -->
             <section id="pricing" class="py-16 md:py-24 px-4 bg-black bg-opacity-20">
                 <div class="container mx-auto text-center max-w-3xl">
-                     <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Simple, Transparent Pricing</h2>
+                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">Simple, Transparent Pricing</h2>
                      <p class="text-lg text-gray-400 mt-4 mb-10 max-w-3xl mx-auto">No confusing packages or hidden fees. Just a clear price for the work we agree on.</p>
                      <div class="card-bg rounded-2xl p-10 max-w-2xl mx-auto glow-effect">
-                         <h3 class="text-2xl font-bold mb-3">Free Automation Strategy Session</h3>
+                         <h3 class="text-2xl font-bold mb-3">Get a Custom Plan & Quote</h3>
                          <p class="text-gray-400 mb-6">
-                             Every project starts with a free, no-obligation consultation. I'll analyze your workflow and give you a concrete plan to save time and money.
+                             Every project is unique. Let's start with a free, no-obligation strategy session to analyze your needs. I'll provide a concrete plan and a fixed price to achieve your goals.
                          </p>
-                         <p class="text-lg text-white mb-6">All projects are custom-quoted to fit your exact needs.</p>
-                         <a href="#contact" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg">
-                             Book Your Free Strategy Session
-                         </a>
+                         <p class="text-lg text-white">
+                            Ready to see what's possible? <a href="#contact" class="font-semibold gradient-text hover:underline">Let's schedule your consultation.</a>
+                         </p>
                      </div>
                 </div>
             </section>
@@ -198,20 +219,14 @@
             <!-- Contact Section -->
             <section id="contact" class="py-16 md:py-24 px-4">
                 <div class="container mx-auto text-center max-w-3xl">
-                    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Ready to Get Started?</h2>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-4">Ready to Get Started?</h2>
                     <p class="text-lg text-gray-400 mb-8">
                         Let's talk about how I can save you time and help your business grow. No pressure, no hard sell. Just a straightforward conversation.
                     </p>
-                    <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-xl">
+                    <div class="flex justify-center items-center text-xl">
                         <a href="mailto:kauders.ai@gmail.com" class="text-gray-300 hover:gradient-text transition-colors duration-300">
                             <span class="font-semibold">Email:</span> kauders.ai@gmail.com
                         </a>
-                        <!--
-                        <span class="text-gray-600 hidden md:block">|</span>
-                        <a href="tel:123-456-7890" class="text-gray-300 hover:gradient-text transition-colors duration-300">
-                            <span class="font-semibold">Phone:</span> (123) 456-7890
-                        </a>
-                        -->
                     </div>
                 </div>
             </section>
@@ -229,11 +244,32 @@
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                // The mobile link handler will close the menu, this just scrolls
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+                e.preventDefault();
             });
+        });
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function openMenu() {
+            mobileMenu.classList.remove('hidden');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        menuBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMenu); // Close menu when a link is clicked
         });
 
         // Animated background dots
@@ -251,3 +287,4 @@
     </script>
 </body>
 </html>
+
