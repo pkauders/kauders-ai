@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauders.ai | AI & Automation for Cedarburg Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            color: #E2E2E2;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3B82F6, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.2), 0 0 30px rgba(139, 92, 246, 0.2), 0 0 45px rgba(236, 72, 153, 0.2);
+        }
+        .card-bg {
+             background-color: rgba(23, 23, 23, 0.8);
+             backdrop-filter: blur(10px);
+             -webkit-backdrop-filter: blur(10px);
+             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #3B82F6, #A855F7, #D946EF);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+        .animated-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .dot {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: rgba(139, 92, 246, 0.3);
+            border-radius: 50%;
+            animation: move 25s linear infinite;
+        }
+        @keyframes move {
+            0% { transform: translateY(100vh) scale(1); }
+            100% { transform: translateY(-10vh) scale(1.5); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="relative overflow-hidden">
+        <div id="animated-bg" class="animated-background"></div>
+
+        <!-- Header -->
+        <header class="absolute top-0 left-0 right-0 z-10 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-2xl font-bold tracking-tighter">kauders<span class="gradient-text">.ai</span></h1>
+                <nav>
+                    <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">What I Do</a>
+                    <a href="#process" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Process</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="min-h-screen flex items-center justify-center text-center px-4 relative">
+                <div class="max-w-4xl">
+                    <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 leading-tight">Stop Wasting Time. <br><span class="gradient-text">Automate Your Business.</span></h2>
+                    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                        For <span class="text-white font-semibold">Cedarburg</span> businesses: I build custom AI and automation solutions that eliminate tedious tasks, unlock data insights, and free you up to focus on what you do best. Powerful results, reasonably priced.
+                    </p>
+                    <a href="#contact" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg">
+                        Start Saving Time
+                    </a>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="py-16 md:py-24 px-4">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">What I Actually Do</h2>
+                        <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto">It's not about buzzwords. It's about solving real problems that cost you time and money.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Card 1 -->
+                        <div class="card-bg rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300 glow-effect">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                            <h3 class="text-2xl font-bold mb-3">Turn Your Data into Decisions</h3>
+                            <p class="text-gray-400">
+                                Your business generates tons of data. I build systems to automatically collect, analyze, and present it in simple reports. Stop guessing and start making informed choices about sales, inventory, and customers.
+                            </p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card-bg rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300 glow-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>
+                            <h3 class="text-2xl font-bold mb-3">Automate Repetitive Work</h3>
+                            <p class="text-gray-400">
+                                Think about the tasks you do every day: invoicing, data entry, report generation. I create software "robots" to handle that work for you, 24/7, with perfect accuracy. This frees your team for more valuable activities.
+                            </p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card-bg rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300 glow-effect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                            <h3 class="text-2xl font-bold mb-3">Integrate Smart AI</h3>
+                            <p class="text-gray-400">
+                                Artificial Intelligence isn't just for big tech. I can integrate practical AI into your workflow, from intelligent customer service bots to systems that predict sales trends. Gain a competitive edge with smart technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+             <!-- Process Section -->
+            <section id="process" class="py-16 md:py-24 px-4 bg-black bg-opacity-20">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">A Simple, Clear Process</h2>
+                        <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto">I make it easy to get started and deliver results you can see.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+                        <div class="flex flex-col items-center">
+                            <div class="flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 border border-gray-700 mb-4">
+                                <span class="text-3xl font-bold gradient-text">1</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Discovery Call</h3>
+                            <p class="text-gray-400">We'll have a quick, free chat to understand your goals and identify the biggest opportunities for automation in your business.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 border border-gray-700 mb-4">
+                               <span class="text-3xl font-bold gradient-text">2</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Custom Proposal</h3>
+                            <p class="text-gray-400">You'll get a straightforward proposal with a clear plan, timeline, and a fixed price. No surprises.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 border border-gray-700 mb-4">
+                               <span class="text-3xl font-bold gradient-text">3</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Build & Deliver</h3>
+                            <p class="text-gray-400">I get to work building your custom solution. I'll handle all the technical details and deliver a finished product that just works.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Local Section -->
+            <section id="local" class="py-16 md:py-24 px-4">
+                <div class="container mx-auto text-center max-w-3xl">
+                    <h2 class="text-4xl font-bold mb-4 tracking-tighter">Your Local <span class="gradient-text">Cedarburg</span> Partner</h2>
+                    <p class="text-lg text-gray-400">
+                        Why hire a faceless firm from across the country? I'm right here in Cedarburg. I understand the local business landscape and can meet you for coffee to discuss your challenges face-to-face. You get dedicated, personal service from a neighbor.
+                    </p>
+                </div>
+            </section>
+            
+             <!-- Pricing Section -->
+            <section id="pricing" class="py-16 md:py-24 px-4 bg-black bg-opacity-20">
+                <div class="container mx-auto text-center max-w-3xl">
+                     <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Simple, Transparent Pricing</h2>
+                     <p class="text-lg text-gray-400 mt-4 mb-10 max-w-3xl mx-auto">No confusing packages or hidden fees. Just a clear price for the work we agree on.</p>
+                     <div class="card-bg rounded-2xl p-10 max-w-2xl mx-auto glow-effect">
+                        <h3 class="text-2xl font-bold mb-3">Free Automation Audit</h3>
+                        <p class="text-gray-400 mb-6">
+                            Every project starts with a free, no-obligation consultation. I'll analyze your workflow and give you a concrete plan to save time and money.
+                        </p>
+                        <p class="text-lg text-white mb-6">All projects are custom-quoted to fit your exact needs.</p>
+                        <a href="#contact" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg">
+                            Book Your Free Audit
+                        </a>
+                     </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-16 md:py-24 px-4">
+                <div class="container mx-auto text-center max-w-3xl">
+                    <div class="mb-6">
+                        <span class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-semibold tracking-wider rounded-full px-4 py-1">Now accepting founding clients</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Ready to Get Started?</h2>
+                    <p class="text-lg text-gray-400 mb-8">
+                        Let's talk about how I can save you time and help your business grow. No pressure, no hard sell. Just a straightforward conversation.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-xl">
+                        <a href="mailto:contact@kauders.ai" class="text-gray-300 hover:gradient-text transition-colors duration-300">
+                            <span class="font-semibold">Email:</span> contact@kauders.ai
+                        </a>
+                        <span class="text-gray-600 hidden md:block">|</span>
+                        <a href="tel:123-456-7890" class="text-gray-300 hover:gradient-text transition-colors duration-300">
+                            <span class="font-semibold">Phone:</span> (123) 456-7890
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-gray-800 py-8 px-4">
+            <div class="container mx-auto text-center text-gray-500">
+                <p>&copy; 2024 kauders.ai | Automation & AI for Cedarburg, WI</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animated background dots
+        const bg = document.getElementById('animated-bg');
+        const numDots = 50;
+        for (let i = 0; i < numDots; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.style.left = `${Math.random() * 100}vw`;
+            dot.style.animationDelay = `${Math.random() * 25}s`;
+            dot.style.animationDuration = `${15 + Math.random() * 10}s`;
+            dot.style.opacity = Math.random();
+            bg.appendChild(dot);
+        }
+    </script>
+</body>
+</html>
+
