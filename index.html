@@ -371,10 +371,10 @@
             const correctPassword = "kauders"; // Change "stealth" to your desired password
             // ---
             
-            let password = prompt("Please enter password to view site:", "");
+            let password = prompt("Welcome to kauders.ai! Please enter your access code:", "");
             
-            // Loop to check password
-            while (password !== correctPassword) {
+            // Loop to check password (case-insensitive)
+            while (password?.toLowerCase() !== correctPassword.toLowerCase()) {
                 if (password === null) { // User clicked "Cancel"
                     // Show an 'Access Denied' message and stop
                     document.body.innerHTML = '<div style="color: #E2E2E2; background-color: #0A0A0A; text-align: center; padding-top: 40vh; height: 100vh; font-family: \'Inter\', sans-serif; font-size: 1.5rem;">Access Denied.</div>';
@@ -382,7 +382,7 @@
                     return; // Stop script execution
                 }
                 // If incorrect, prompt again
-                password = prompt("Incorrect password. Please try again:", "");
+                password = prompt("Invalid access code. Please try again:", "");
             }
             
             // If password was correct, show the site and run the rest of the site's scripts
